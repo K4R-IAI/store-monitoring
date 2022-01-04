@@ -52,6 +52,6 @@ def test1(ros):
             separator = deepcopy(separator)
             separator.point.x = max(0, min(req.shelf_layer_width, x + np.random.normal(scale=0.01)))
             req.separators.append(separator)
-    req.plot = True
+    req.plot = False
     res = srv.call(req)
     assert len(res.separators) == number_of_separtors

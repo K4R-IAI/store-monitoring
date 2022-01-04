@@ -61,7 +61,7 @@ class SeparatorClustering(object):
             for i, label in enumerate(labels):
                 if label != -1:
                     separator = PointStamped()
-                    separator.header.frame_id = 'map'
+                    # separator.header.frame_id = 'map'
                     separator.point = Point(*self.cluster_to_separator(data[clusters.labels_ == label]))
                     centers.append(separator)
             if len(separators) == 0:
