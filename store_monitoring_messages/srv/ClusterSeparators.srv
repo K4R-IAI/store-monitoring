@@ -1,8 +1,9 @@
-geometry_msgs/PoseStamped[] separators
+geometry_msgs/PointStamped[] separators
 geometry_msgs/PoseStamped shelf_layer
+float64 shelf_layer_width
 bool plot
 ---
 
-geometry_msgs/PoseStamped[] separators
+geometry_msgs/PointStamped[] separators
 int64 error
 string error_msg
